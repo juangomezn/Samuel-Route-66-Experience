@@ -17,11 +17,9 @@ export default function IntroScreen({ onFinish }) {
     return () => clearTimeout(timer);
   }, [started]);
 
-  // 🎬 cierre cinematográfico
   const handleFinish = () => {
     setClosing(true);
 
-    // 🔊 fade out del motor antes de salir
     if (audioRef.current) {
       let vol = audioRef.current.volume;
 
@@ -37,11 +35,10 @@ export default function IntroScreen({ onFinish }) {
     }
 
     setTimeout(() => {
-      onFinish(); // 👉 aquí App activa la música global
+      onFinish();
     }, 1200);
   };
 
-  // 🚗 encender motor
   const startExperience = async () => {
     try {
       if (audioRef.current) {

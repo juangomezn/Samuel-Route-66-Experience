@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 
 export default function CountdownSection() {
 
-  // 🔥 CAMBIA LA FECHA DESPUÉS
   const targetDate = new Date("2026-05-24T14:00:00");
 
   const calculateTimeLeft = () => {

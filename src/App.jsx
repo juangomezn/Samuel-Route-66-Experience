@@ -12,11 +12,9 @@ export default function App() {
   const [showIntro, setShowIntro] = useState(true);
   const [showMain, setShowMain] = useState(false);
 
-  // 🎧 AUDIO GLOBAL
   const audioRef = useRef(null);
   const [musicStarted, setMusicStarted] = useState(false);
 
-  // 🚀 iniciar experiencia + música
   const handleStart = () => {
     setShowIntro(false);
 
@@ -24,7 +22,6 @@ export default function App() {
       setShowMain(true);
     }, 1300);
 
-    // 🔊 activar música solo una vez
     if (!musicStarted && audioRef.current) {
       audioRef.current.volume = 0.35;
       audioRef.current.loop = true;
@@ -41,7 +38,7 @@ export default function App() {
   };
 
   return (
-    // ✅ bg-black en el root: nunca hay flash blanco
+
     <div className="bg-black min-h-screen">
 
       {/* 🎧 AUDIO GLOBAL */}
@@ -60,7 +57,6 @@ export default function App() {
         )}
       </AnimatePresence>
 
-      {/* ✅ CONTENIDO PRINCIPAL — solo monta después del exit de la intro */}
       <AnimatePresence>
         {showMain && (
           <motion.main

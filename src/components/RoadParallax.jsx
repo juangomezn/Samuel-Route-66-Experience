@@ -3,7 +3,6 @@ import { motion, useScroll, useTransform } from "framer-motion";
 export default function RoadParallax() {
   const { scrollY } = useScroll();
 
-  // MOVIMIENTO PARALLAX
   const roadY = useTransform(scrollY, [0, 2000], [0, 600]);
 
   const glowOpacity = useTransform(

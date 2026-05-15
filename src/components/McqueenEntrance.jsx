@@ -4,7 +4,6 @@ import { useEffect, useRef, useState } from "react";
 export default function McqueenEntrance() {
   const passAudio = useRef(null);
 
-  // CONTROLAR VISIBILIDAD
   const [show, setShow] = useState(true);
 
   useEffect(() => {
@@ -16,7 +15,6 @@ export default function McqueenEntrance() {
       }, 1200);
     }
 
-    // DESAPARECER COMPLETAMENTE
     const timer = setTimeout(() => {
       setShow(false);
     }, 2500);
@@ -24,7 +22,6 @@ export default function McqueenEntrance() {
     return () => clearTimeout(timer);
   }, []);
 
-  // YA NO RENDERIZA NADA
   if (!show) return null;
 
   return (
