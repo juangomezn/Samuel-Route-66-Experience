@@ -1,4 +1,4 @@
-# 🚗 Ian Samuel — Route 66 Experience
+# 🚗 Samuel — Route 66 Experience
 
 Una experiencia web cinematográfica interactiva inspirada en el universo de **Cars**, la estética de la **Ruta 66** y la emoción de una celebración muy especial: el primer año de Ian Samuel.
 
