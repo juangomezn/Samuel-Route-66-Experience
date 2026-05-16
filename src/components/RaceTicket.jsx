@@ -95,7 +95,6 @@ export default function RaceTicket() {
               </p>
 
               <h3 className="mt-6 text-5xl md:text-6xl font-black leading-none">
-                Ian
                 <span className="block text-red-500">
                   Samuel
                 </span>
@@ -135,11 +134,11 @@ export default function RaceTicket() {
 
                   <div>
                     <p className="text-zinc-500 text-sm">
-                      Hora de salida
+                      Fecha
                     </p>
 
                     <p className="font-bold text-lg">
-                      2:00 PM
+                      Domingo 24 de Mayo - 2:00 PM
                     </p>
                   </div>
                 </div>
